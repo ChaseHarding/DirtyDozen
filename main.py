@@ -4,5 +4,16 @@
 
 #This is simply for study purposes to understanding list items in python.
 
-dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches",
-                "Cherries", "Pears", "Tomatoes", "Celery", "Potatoes"]
+#Say I have this list of items, say I wanted to seperate them into fruits and vegetables.
+# dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches",
+#                 "Cherries", "Pears", "Tomatoes", "Celery", "Potatoes"]
+
+#I could make two seperate lists like so, but these two lists are related, because theyre within
+# the high pesticied list, so how do we achieve this?
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+
+#Well we can make a list within a list.
+dirty_dozen = [fruits, vegetables]
+
+print(dirty_dozen)
