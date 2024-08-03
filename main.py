@@ -16,4 +16,8 @@ vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
 #Well we can make a list within a list.
 dirty_dozen = [fruits, vegetables]
 
-print(dirty_dozen)
+#with the use of these brackets in our print statement we can choose between which nested list item 
+#in this case either 0 or 1/ fruits or vegetables. and the second bracket would select the index item
+#from the list chosen by the first bracket. 
+#in this case we've selected the nested list item fruits, and we've chosen apples from that list. 
+print(dirty_dozen[0][2])
